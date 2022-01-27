@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_array_colors">
+        <item>Красный</item>
+        <item>Синий</item>
+        <item>Серый</item>
+        <item>Оранжевый</item>
+        <item>Черный</item>
+    </string-array>
+    <string-array name="settings_array_colors_cod">
+        <item>#FFFA0317</item>
+        <item>#FF0027FF</item>
+        <item>#FF6F6F70</item>
+        <item>#FFFF9800</item>
+        <item>#FF000000</item>
+    </string-array>
+</resources>

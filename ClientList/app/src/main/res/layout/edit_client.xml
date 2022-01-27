@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_edit_client">
+
+    <EditText
+        android:id="@+id/edCompany"
+        android:layout_width="312dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/background_edit_client_item"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:hint="@string/company"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_edit_client_item"
+        android:ems="10"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edCompany"
+        app:layout_constraintStart_toStartOf="@+id/edCompany"
+        app:layout_constraintTop_toBottomOf="@+id/edCompany" />
+
+    <EditText
+        android:id="@+id/edLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_edit_client_item"
+        android:ems="10"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edFirstName"
+        app:layout_constraintStart_toStartOf="@+id/edFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/edFirstName" />
+
+    <EditText
+        android:id="@+id/edTel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_edit_client_item"
+        android:ems="10"
+        android:hint="@string/tel"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edFirstName"
+        app:layout_constraintStart_toStartOf="@+id/edFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/edLastName" />
+
+    <EditText
+        android:id="@+id/edNotes"
+        android:layout_width="318dp"
+        android:layout_height="316dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_edit_client_item"
+        android:ems="10"
+        android:gravity="top|left"
+        android:hint="@string/notes"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxVip"
+        app:layout_constraintEnd_toEndOf="@+id/edFirstName"
+        app:layout_constraintStart_toStartOf="@+id/edFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxStandart" />
+
+    <CheckBox
+        android:id="@+id/checkBoxImpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:onClick="onClickChImpot"
+        android:text="@string/important"
+        android:textColor="@color/blue_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxStandart"
+        app:layout_constraintEnd_toStartOf="@+id/checkBoxStandart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxStandart" />
+
+    <CheckBox
+        android:id="@+id/checkBoxStandart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickChStandart"
+        android:text="@string/standart"
+        android:textColor="@color/blue_dark"
+        app:layout_constraintEnd_toEndOf="@+id/edTel"
+        app:layout_constraintStart_toStartOf="@+id/edTel"
+        app:layout_constraintTop_toBottomOf="@+id/edTel" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNoImpot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:onClick="onClickChNoImpot"
+        android:text="@string/no_important"
+        android:textColor="@color/blue_dark"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBoxStandart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxStandart"
+        app:layout_constraintTop_toTopOf="@+id/checkBoxStandart"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/checkBoxVip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/vip"
+        android:text="@string/vip"
+        android:textColor="@color/red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btSaveClient"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_save"
+        tools:ignore="MissingConstraints,VectorDrawableCompat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

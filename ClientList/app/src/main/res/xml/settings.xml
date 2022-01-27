@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/settings_text">
+
+        <ListPreference
+            android:defaultValue="#FF000000"
+            android:entries="@array/settings_array_colors"
+            android:entryValues="@array/settings_array_colors_cod"
+            android:icon="@drawable/ic_setting_colors"
+            android:key="@string/settings_color_text_key"
+            android:title="@string/settings_color_text" />
+    </PreferenceCategory>
+</PreferenceScreen>

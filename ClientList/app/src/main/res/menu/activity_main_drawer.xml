@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/id_client"
+            android:icon="@drawable/ic_client"
+            android:title="@string/client" />
+        <item
+            android:id="@+id/id_vip"
+            android:icon="@drawable/ic_vip_menu"
+            android:title="@string/vip" />
+    </group>
+
+    <item android:title="@string/types_clients">
+        <menu>
+            <item
+                android:id="@+id/id_important"
+                android:icon="@drawable/ic_import"
+                android:title="@string/important" />
+            <item
+                android:id="@+id/id_standart"
+                android:icon="@drawable/ic_standart"
+                android:title="@string/standart" />
+            <item
+                android:id="@+id/id_no_important"
+                android:icon="@drawable/ic_noimport"
+                android:title="@string/no_important" />
+        </menu>
+    </item>
+
+    <item android:title="@string/tools">
+        <menu>
+            <item
+                android:id="@+id/id_settings"
+                android:icon="@drawable/ic_settings"
+                android:title="@string/settings" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">ClientList</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">CRM</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="client">Клиент</string>
+
+
+    <string name="first_name">Имя</string>
+    <string name="last_name">Фамилия</string>
+    <string name="tel">Телефон</string>
+    <string name="important">Важный</string>
+    <string name="standart">Стандартный</string>
+    <string name="no_important">Не важный</string>
+    <string name="notes">Заметки</string>
+    <string name="vip">VIP</string>
+    <string name="types_clients">Тип клиента</string>
+    <string name="settings">Настройки</string>
+    <string name="web_page">Web страница</string>
+    <string name="tools">Инструменты</string>
+    <string name="edit_client">Редактировать</string>
+    <string name="delete_client">Удалить</string>
+    <string name="delete_message">Подтвердите, что хотите удалить карточку клиента</string>
+    <string name="positive">Да</string>
+    <string name="negative">Нет</string>
+    <string name="settings_text">Настройки текста</string>
+    <string name="settings_color_text">Цвет текста</string>
+    <string name="settings_color_text_key">settings_color_text_key</string>
+    <string name="search">Search</string>
+    <string name="company">Компания</string>
+</resources>
