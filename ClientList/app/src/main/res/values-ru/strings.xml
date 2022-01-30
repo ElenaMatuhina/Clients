@@ -13,9 +13,9 @@
     <string name="first_name">Имя</string>
     <string name="last_name">Фамилия</string>
     <string name="tel">Телефон</string>
-    <string name="important">Важный</string>
-    <string name="standart">Стандартный</string>
-    <string name="no_important">Не важный</string>
+    <string name="B2B" translatable="false">B2B</string>
+    <string name="B2G" translatable="false">B2G</string>
+    <string name="B2C" translatable="false">B2C</string>
     <string name="notes">Заметки</string>
     <string name="vip">VIP</string>
     <string name="types_clients">Тип клиента</string>

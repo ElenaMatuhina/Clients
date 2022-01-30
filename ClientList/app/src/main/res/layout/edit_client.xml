@@ -62,63 +62,60 @@
         app:layout_constraintStart_toStartOf="@+id/edFirstName"
         app:layout_constraintTop_toBottomOf="@+id/edLastName" />
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="312dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edTel"
+        app:layout_constraintStart_toStartOf="@+id/edTel"
+        app:layout_constraintTop_toBottomOf="@+id/edTel">
+
+        <CheckBox
+            android:id="@+id/checkBoxImpot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:onClick="onClickChImpot"
+            android:text="@string/B2B"
+            android:textColor="@color/blue_dark" />
+
+        <CheckBox
+            android:id="@+id/checkBoxStandart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:onClick="onClickChStandart"
+            android:text="@string/B2G"
+            android:textColor="@color/blue_dark" />
+
+        <CheckBox
+            android:id="@+id/checkBoxNoImpot"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="onClickChNoImpot"
+            android:text="@string/B2C"
+            android:textColor="@color/blue_dark" />
+    </LinearLayout>
+
     <EditText
         android:id="@+id/edNotes"
-        android:layout_width="318dp"
-        android:layout_height="316dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="0dp"
+        android:layout_height="312dp"
         android:background="@drawable/background_edit_client_item"
         android:ems="10"
         android:gravity="top|left"
         android:hint="@string/notes"
         android:inputType="textPersonName"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/checkBoxVip"
-        app:layout_constraintEnd_toEndOf="@+id/edFirstName"
-        app:layout_constraintStart_toStartOf="@+id/edFirstName"
-        app:layout_constraintTop_toBottomOf="@+id/checkBoxStandart" />
-
-    <CheckBox
-        android:id="@+id/checkBoxImpot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:onClick="onClickChImpot"
-        android:text="@string/important"
-        android:textColor="@color/blue_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBoxStandart"
-        app:layout_constraintEnd_toStartOf="@+id/checkBoxStandart"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/checkBoxStandart" />
-
-    <CheckBox
-        android:id="@+id/checkBoxStandart"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:onClick="onClickChStandart"
-        android:text="@string/standart"
-        android:textColor="@color/blue_dark"
-        app:layout_constraintEnd_toEndOf="@+id/edTel"
-        app:layout_constraintStart_toStartOf="@+id/edTel"
-        app:layout_constraintTop_toBottomOf="@+id/edTel" />
-
-    <CheckBox
-        android:id="@+id/checkBoxNoImpot"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="48dp"
-        android:onClick="onClickChNoImpot"
-        android:text="@string/no_important"
-        android:textColor="@color/blue_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/checkBoxStandart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/checkBoxStandart"
-        app:layout_constraintTop_toTopOf="@+id/checkBoxStandart"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <CheckBox
         android:id="@+id/checkBoxVip"
@@ -130,7 +127,8 @@
         android:textColor="@color/red"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNotes"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btSaveClient"

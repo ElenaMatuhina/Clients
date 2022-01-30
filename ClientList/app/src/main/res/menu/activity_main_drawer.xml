@@ -17,17 +17,17 @@
     <item android:title="@string/types_clients">
         <menu>
             <item
-                android:id="@+id/id_important"
-                android:icon="@drawable/ic_import"
-                android:title="@string/important" />
+                android:id="@+id/id_b2b"
+                android:icon="@drawable/ic_b2b"
+                android:title="@string/B2B" />
             <item
-                android:id="@+id/id_standart"
-                android:icon="@drawable/ic_standart"
-                android:title="@string/standart" />
+                android:id="@+id/id_b2g"
+                android:icon="@drawable/ic_b2g"
+                android:title="@string/B2G" />
             <item
-                android:id="@+id/id_no_important"
-                android:icon="@drawable/ic_noimport"
-                android:title="@string/no_important" />
+                android:id="@+id/id_b2c"
+                android:icon="@drawable/ic_b2c"
+                android:title="@string/B2C" />
         </menu>
     </item>
 

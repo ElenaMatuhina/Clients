@@ -19,7 +19,7 @@ public class Client {
     private String telepfone;
     @ColumnInfo (name = "type")
     private int type;
-    @ColumnInfo (name = "description")
+    @ColumnInfo (name = "info")
     private String description;
     @ColumnInfo (name = "vip")
     private int vip;

@@ -13,10 +13,10 @@
     <string name="first_name">First name</string>
     <string name="last_name">Last name</string>
     <string name="tel">Telephone</string>
-    <string name="important">Important</string>
-    <string name="standart">Standart</string>
-    <string name="no_important">No Important</string>
-    <string name="notes">Note</string>
+    <string name="B2B" translatable="false">B2B</string>
+    <string name="B2G" translatable="false">B2G</string>
+    <string name="B2C" translatable="false">B2C</string>
+    <string name="notes">Info</string>
     <string name="vip">VIP</string>
     <string name="types_clients">Type client</string>
     <string name="settings">Settings</string>

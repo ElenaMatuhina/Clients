@@ -33,6 +33,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.clientlist.databinding.ActivityMainBinding;
 
+import java.io.File;
+import java.io.IOException;
 import java.nio.channels.InterruptedByTimeoutException;
 import java.util.ArrayList;
 import java.util.List;
@@ -58,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navView = findViewById(R.id.nav_view);
         navView.setNavigationItemSelectedListener(this);
         drawerLayout = findViewById(R.id.drawer_layout);
+
 
         adapterOnItemClicked = new DataAdapter.AdapterOnItemClicked() {
             @Override
@@ -157,7 +160,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             });
         }
-        else if(id == R.id.id_important) {
+        else if(id == R.id.id_b2b) {
             Executer.getInstance().getDiscIO().execute(new Runnable() {
                 @Override
                 public void run() {
@@ -173,7 +176,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             });
         }
-        else if(id == R.id.id_standart) {
+        else if(id == R.id.id_b2g) {
             Executer.getInstance().getDiscIO().execute(new Runnable() {
                 @Override
                 public void run() {
@@ -189,7 +192,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 }
             });
         }
-        else if(id == R.id.id_no_important) {
+        else if(id == R.id.id_b2c) {
             Executer.getInstance().getDiscIO().execute(new Runnable() {
                 @Override
                 public void run() {
